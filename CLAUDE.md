@@ -1,12 +1,22 @@
-# Cursor AI 지시문 — IDR 시스템 데이터 분석 AI 백엔드
+# Claude Code 지시문 — IDR 시스템 데이터 분석 AI 백엔드
 
 **[Git / SCM — 최우선]** 소스 제어에서 AI가 **생성하는 커밋 메시지는 반드시 한국어**로만 작성한다 (영어 제목·본문 금지). 형식은 Conventional Commits: `feat(범위): 한글 제목`. (세부 타입·예시는 `.cursor/rules/git-commit-korean.mdc` 및 `.vscode/settings.json`의 Copilot 커밋 지시와 동일 계열로 맞출 것.)
 
 ## 필수 지시사항
 
-Cursor AI야, 이 프로젝트에서 코드를 작성하거나 아키텍처를 결정하기 전에
+Claude Code야, 이 프로젝트에서 코드를 작성하거나 아키텍처를 결정하기 전에
 반드시 아래 규칙 문서들을 먼저 읽고 모든 내용을 반영해라.
 문서를 읽지 않고 코드를 작성하는 것은 금지한다.
+
+---
+
+## 세션 시작 시 읽기 순서 (필수)
+
+1. `docs/plans/plan.md` — Phase·WBS 위치
+2. `docs/CURRENT_WORK_SESSION.md` — 현재 Gate, 구현/테스트 계획
+3. `docs/rules/error_analysis.md` — 알려진 AI 오판
+4. `.cursor/skills/idr-session-workflow/SKILL.md` — Gate A~E 워크플로 요약
+5. 구현·리뷰 시: `docs/rules/project_context.md`, `docs/rules/backend_architecture.md`, `ref_files/IDR_Data_Analysis_SDD.md` (필요 범위)
 
 ---
 
