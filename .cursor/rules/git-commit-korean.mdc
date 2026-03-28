@@ -1,0 +1,20 @@
+---
+description: SCM에서 생성하는 Git 커밋 메시지는 한국어 Conventional Commits로 통일
+alwaysApply: true
+---
+
+# Git 커밋 메시지 언어 (최우선)
+
+소스 제어(SCM)에서 **「커밋 메시지 생성」** 등으로 AI가 만드는 메시지는 **반드시 한국어**로만 작성한다. 영어 제목·본문을 쓰지 않는다.
+
+- 형식: `타입(범위): 한글 제목` (Conventional Commits, 제목 끝 마침표 없음)
+- 타입 예: `feat`, `fix`, `refactor`, `test`, `docs`, `chore`, `ci`, `perf`, `style`
+- 범위 예: `auth`, `datasets`, `scm`, `crm`, `bi`, `agent`, `config`, `crud`, `plans`
+
+예시:
+
+- `feat(datasets): CSV 업로드 엔드포인트 추가`
+- `fix(crm): compact=true 응답에서 risk_score 누락 수정`
+- `docs(plans): 개발 계획서(plan.md) 갱신`
+
+이 규칙은 채팅 응답 언어와 무관하게 **커밋 메시지 생성에 우선 적용**되어야 한다.
